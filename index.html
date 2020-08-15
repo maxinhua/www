@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Full of love</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.css">
+  <!-- Demo styles -->
+  <link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    #myContent{
+    	height:500px;
+    	overflow: hidden;
+	    text-shadow: 2px 3px 3px #000;
+	    font-family: Microsoft YaHei;
+	    font-style: italic;
+	    font-weight: 500;
+	    font-size: 20px;
+	    color: #ffffff;
+	       
+    }
+    .swiper-slide{
+    	 background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    }
+
+
+
+    #loveHeart {
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+	}
+
+	#garden{width:100%;height:100%}
+	#elapseClock{font-size:100%;margin-top:10px;margin-bottom:-10px}
+	#words{
+		text-shadow: 2px 3px 3px #000;
+	    font-family: Microsoft YaHei;
+	    font-style: italic;
+	    font-weight: 500;
+	    font-size: 20px;
+	    color: #ffffff;
+
+
+		top:50%!important;left:50%!important;
+		transform: translate(-50%,-50%);
+	}
+	#elapseClock .digit{font-family:"digit";font-size:100%;color:red;}
+
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <audio src="https://mp3.itingwa.com/2019-08/16/20190816081425-NTEzNTg4.mp3" autoplay="autoplay" >
+ Your browser does not support the audio element.
+</audio>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+     	   <div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					<div>我们已经认识</div>
+					<div id="elapseClock"></div>
+					
+				</div>
+
+				
+			</div>
+			</div>
+<script type="text/javascript">
+// 爱心
+var offsetX = $("#loveHeart").width() ;
+var offsetY = $("#loveHeart").height();
+var together = new Date();
+together.setFullYear(2020, 4, 4);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 800);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+      </div>
+      <div class="swiper-slide">
+      	<div id="myContent"><span id="blink" style="display: none;">_</span></div>
+		<div id="contentToWrite" style="display:none">
+				一时间不知道从哪说起,<br>
+				真爱来了，我们要好好把<br>
+				一时间不知道从哪说起<br>
+				真爱来了，我们要好好把握。不管面临多大的压力，<br>
+				不管前面的路如何崎岖.<br>
+				不管经历过什么,我仍坚信最浪漫的事就是和<br>
+				你一起慢慢变老.<br>
+				
+				<br>
+				-----------------------Just for You, YaRu<br>
+		</div>
+      </div>
+      <div class="swiper-slide">
+      	<iframe id="iframe" src="https://www.17sucai.com/preview/1424582/2020-01-18/qr/index.html" frameborder="0" width="100%" height="100%"></iframe>
+      </div>
+  
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.js"></script>
+  <!--库-->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <!--文字-->
+  <script type="text/javascript" src="js/text.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+   //swiper 上下滚动
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      on:{
+	       slideChangeTransitionEnd: function(){ 
+	      	 writeContent(true);
+	      } 
+	    }
+	     
+    });
+   
+
+
+  </script>
+</body>
+
+</html>
