@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>To Miaomiao</title>
+  <title>To Wangchao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
   <!-- Link Swiper's CSS -->
@@ -88,7 +88,7 @@
 	    font-weight: 500;
 	    font-size: 20px;
 	    color: #ffffff;
-            top:50%!important;
+      top:50%!important;
 	    left:50%!important;
 	    transform: translate(-50%,-50%);
 	}
@@ -109,10 +109,13 @@
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					<div>时间这一刻已停止</div>
-					<div id="elapseClock"></div>
-					<br>
-					<div>有缘自会再相见，祝你幸福</div>
+					<div>感恩遇见</div>
+          <br>
+          <div>很高兴遇见你</div>
+          
+					<!-- <div id="elapseClock"></div> -->
+		
+					<!-- <div>有缘自会再相见，祝你幸福</div> -->
 				</div>
 			</div>
 			</div>
@@ -121,7 +124,7 @@
 var offsetX = $("#loveHeart").width() ;
 var offsetY = $("#loveHeart").height();
 var together = new Date();
-together.setFullYear(2020, 4, 4);
+together.setFullYear(2021, 8, 5);
 together.setHours(0);
 together.setMinutes(0);
 together.setSeconds(0);
@@ -152,32 +155,30 @@ if (!document.createElement('canvas').getContext) {
 
       </div>
       <div class="swiper-slide">
-      	<div id="myContent"><span id="blink" style="display: none;">_</span></div>
+    <div id="myContent"><span id="blink" style="display: none;">_</span></div>
+    <!-- 第二页 -->
 		<div id="contentToWrite" style="display:none">
-				第一次见到你，直到现在<br>
-				虽说每次在一起的时间不长<br>
-				但有一点可以确定<br>
-				对你的好感，是一次次递增的 <br>
-				因为你的容颜，美丽而又动人 <br>
-				因为你的性情，温文而又尔雅 <br>
-				<br>
-				<br>
-
-				
-				我珍惜着与你在一起的时光<br>
-				所以每次的相聚都充满期待<br>
-				你的一颦一笑，一言一行<br>
-				已深深印到我的脑海里<br>
-				我对你的爱与思念<br>
-				正如你所听到的一样<br>
-				满眼星辰皆是你<br>
-				
-			   
-				
-				<br>
-				-----------------------Just for You<br>
-		</div>
+      美丽的梦和美丽的诗一样　<br>
+      都是可遇而不可求的，<br>
+      常常在最没能料到的时刻里出现。<br>
+      我喜欢那样的梦，<br>
+      在梦里，一切都可以重新开始，<br>
+      一切都可以慢慢解释，<br>
+      心里甚至还能感觉到，<br>　
+      所有被浪费的时光<br>
+      竟然都能重回时的狂喜与感激。<br>
+      胸怀中满溢着幸福，<br>
+      只因你就在我眼前，<br>
+      对我微笑，一如当年。<br>　　
+      我真喜欢那样的梦，<br>
+      明明知道你已为我拔涉千里<br>
+      却又觉得芳草鲜美，落英缤纷，<br>
+      好象你我才初相遇。<br>
+    ---初相遇/席慕容<br>
+ 
+  </div>
       </div>
+      <!-- 第三页 -->
       <div class="swiper-slide">
       	<iframe id="iframe" src="https://www.17sucai.com/preview/1424582/2020-01-18/qr/index.html" frameborder="0" width="100%" height="100%"></iframe>
       </div>
@@ -202,7 +203,7 @@ if (!document.createElement('canvas').getContext) {
       direction: 'vertical',
       pagination: {
         el: '.swiper-pagination',
-        clickable: none,
+        clickable: true,
       },
       on:{
 	       slideChangeTransitionEnd: function(){ 
