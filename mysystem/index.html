@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/index.css">
 	
-	
 </head>
 <body>
 	<div class="box">	
@@ -25,8 +24,11 @@
 			<a href="https://mp.weixin.qq.com/cgi-bin/home?t=home/index&lang=zh_CN&token=1142241823">微信公众号</a>
 			<a href="https://docs.qq.com/form/page/DWlBsTndkQ2VTcXRi">急修上传</a>
 			<a href="">理财</a>
+			
 			<a href="https://github.com/">Github</a>
-			<a href="">...</a>
+			<a href="https://www.wjx.cn/Login.aspx?returnUrl=%2fnewwjx%2fmanage%2fmyquestionnaires.aspx">问卷星</a>
+			<!-- <a href="">...</a> -->
+			
 		</div>
 		<!-- <ul>
 			<li>
@@ -35,13 +37,72 @@
 		</ul> -->
 	</div>
 	 
+	<div class="mask">
+		
+		<div class="djs">	
+			
+			<div class="time-djs">
+				距离检验员考试时间不足<p id="ooo">ddd</p>
+			</div>
+			
+
+		<script>
+			function my() {
+				var x = new Date() //创建当前时间
+				y = new Date(2022, 2, 27, 0, 0, 0) //想要的时间
+				miao = (y - x) / 1000
+				tian = Math.floor(miao / 60 / 60 / 24) //天
+				shi = Math.floor(miao / 60 / 60 % 24) //小时
+				fen = Math.floor(miao / 60 % 60) //分
+				miao2 = Math.floor(miao % 60) //秒
+				fen = time(fen)
+				miao2 = time(miao2)
+				o = document.getElementById("ooo")
+				o.innerHTML = tian + "天" + shi + "时" + fen + "分钟" + miao2 + "秒"
+				setTimeout("my()", 1000)
+			}
+			my();
+			function time(i) {
+				if (i < 10) {
+					i = "0" + i
+				}
+				return i
+			}
+
+
+		
+			
+			
+
+
+			</script>
+		<div class="aphorism ">
+			凡事三思而后行
+
+			<br / >
+
+			一切疾病、焦虑、贫穷的来源，皆来自个人的不努力，不自律
+			<br / >
+
+			人无远虑，必有近忧
+		</div>
+		
+
+
+
+
+
+	</div>
 
 		
     
-	 <script src="js/query-1.11.3.min.js"></script>
+	 <script src="js/jquery-1.11.3.min.js"></script>
 	 
 	 <script>
-		
+
+		$(".mask").click(function(){
+			$(this).toggle();
+		});
 		
 
 	  </script> 
