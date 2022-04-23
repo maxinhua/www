@@ -41,19 +41,23 @@ iframe{
 	width: 200px;
 }
 
+/* index - logo */
 
-
+#external-frame{
+    height: 750px;
+}
 
 
 /* 图标部分 */
 
 .box{
     overflow: hidden;
-    width: 840px;
+    width: 820px;
     margin: 20px auto;
 }
 .content{
     position: relative;
+    margin-top: 2%;
 }
 
 .content a{
@@ -147,6 +151,8 @@ iframe{
   }
   .aphorism{
       line-height: 30px;
+      font:italic bold 35px Georgia,serif;
+      color: red;
   } 
 
 
