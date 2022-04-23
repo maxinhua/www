@@ -150,9 +150,10 @@ iframe{
       word-wrap:break-word
   }
   .aphorism{
-      line-height: 30px;
-      font:italic bold 35px Georgia,serif;
+      
+      font:italic bold 30px Georgia,serif;
       color: red;
+      text-align: left;
   } 
 
 
