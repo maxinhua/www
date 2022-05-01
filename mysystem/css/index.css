@@ -68,7 +68,7 @@ iframe{
     background-position: center!important;
     text-align: center;
     position: relative;
-    width: 200px;
+    width: 195px;
     height: 200px;
     line-height: 310px;
     margin: 5px;
@@ -150,7 +150,7 @@ iframe{
       word-wrap:break-word
   }
   .aphorism{
-      
+      line-height: 30px;
       font:italic bold 30px Georgia,serif;
       color: red;
       text-align: left;
