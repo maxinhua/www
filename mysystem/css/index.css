@@ -114,6 +114,7 @@ iframe{
 
 /* 适配移动端 */
 @media screen and (max-width: 640px) {
+    .title{display:hideen;}
     .box{
         width: 99%;
         
